@@ -34,7 +34,7 @@ fn main() {
     println!("Parámetros");
     println!("Sync delay \t\t\t {} chn", sync_delay);
     println!("Equivalencia \t\t\t {} ns/chn", ns_per_chn);
-    match run(&args.filename, sync_delay, ns_per_chn * PS_PER_NS, output_filename) {
+    match run_das6(&args.filename, sync_delay, ns_per_chn * PS_PER_NS, output_filename) {
         Ok(filename) => println!("Se convirtió exitosamente el archivo {}", filename),
         Err(e) => println!("No se pudo convertir el archivo exitosamente porque  {}", e)
     };
