@@ -2,7 +2,7 @@
 name = "glotaran_converter_cli"
 version = "0.1.1"
 edition = "2021"
-authors = [ "Eduardo Gonik" ] 
+authors = ["Eduardo Gonik"]
 license = "MIT"
 description = "CLI to interact with glotaran converter lib"
 repository = "https://github.com/egonik-unlp/glotaran_converter_cli"
@@ -10,4 +10,4 @@ repository = "https://github.com/egonik-unlp/glotaran_converter_cli"
 
 [dependencies]
 clap = { version = "4.4.5", features = ["derive"] }
-glotaran_converter_lib = { version = "0.1.2", path = "../glotaran_converter_lib" }
+glotaran_converter_lib = { version = "0.1.4" }
